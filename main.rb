@@ -1,7 +1,3 @@
-def draw_button(button)
-    paint(button.text, button.x, button.y, button.foreground_color, button.color)
-end
-
 class Button
     attr_reader :text, :x, :y, :foreground_color, :color
 
@@ -11,5 +7,9 @@ class Button
         @y = y
         @foreground_color = foreground_color
         @color = color
+    end
+
+    def draw
+        paint(text, x, y, foreground_color, color)
     end
 end
