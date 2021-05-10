@@ -5,7 +5,7 @@ end
 class Button
     attr_reader :text, :x, :y
 
-    def initialize(text, x, y, foreground_color, dark_mode)
+    def initialize(text, x, y, foreground_color, dark_mode=false)
         @text = text
         @x = x
         @y = y
