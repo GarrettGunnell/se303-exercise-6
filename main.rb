@@ -16,5 +16,10 @@ class Button
         @x = x
         @y = y
         @foreground_color = foreground_color
+        @dark_mode = dark_mode
+    end
+
+    def foreground_color
+        @dark_mode ? @foreground_color - 10 : @foreground_color + 10
     end
 end
