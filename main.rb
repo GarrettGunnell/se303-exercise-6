@@ -22,4 +22,8 @@ class Button
     def foreground_color
         @dark_mode ? @foreground_color - 10 : @foreground_color + 10
     end
+
+    def color
+        @dark_mode ? '#111111' : '#E0E0E0'
+    end
 end
